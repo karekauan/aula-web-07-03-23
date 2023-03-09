@@ -126,9 +126,19 @@ function saveAlert(){
         
       }).then((result) => {
         if (result.isConfirmed) {
-            Swal.fire({
-                template: '#my-template'
-              })
+            alert(`
+            nome: ${nome.value}\n
+            email: ${email.value}\n
+            cep: ${cep.value}\n
+            endereco: ${endereco.value}\n
+            numero: ${numero.value}\n
+            bairro: ${bairro.value}\n
+            cidade: ${cidade.value}\n
+            estado: ${estado.value}\n
+            ibge: ${ibge.value}\n
+            ddd: ${ddd.value}\n
+            siafi: ${siafi.value}\n
+            `)
         }
     })
 }
